@@ -1,0 +1,43 @@
+html{
+  box-sizing: border-box;
+  background:#ffc600;
+  font-family:'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+.inbox{
+  background: white;
+  box-shadow:10px 10px 0 rgba(0,0,0,0.1);
+  margin:3rem 20% 3rem 20%;
+  border-radius:5px;
+
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #534b4b;
+}
+input{
+  margin:1rem;
+}
+p{
+  border-left: 1px solid #534b4b;
+  height: auto;
+  padding:20px;
+  margin:0;
+  font-family:'helvetica neue';
+  font-size: 20px;
+  font-weight: 200
+}
+
+/* New Technique */
+input:checked + p {
+  background:#F9F9F9;
+  text-decoration: line-through;
+  text-decoration-color:teal;
+
+}
+
+.item:last-child {
+  border-bottom:0;
+}

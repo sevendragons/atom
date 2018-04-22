@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Key Sequence Detection</title>
+  <script type="text/javascript" src="cornify.js" charset="utf-8"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    const pressed = [];
+    const secretCode = 'nicky';
+    console.log("Type outside console my English name");
+    window.addEventListener('keyup', (e) => {
+      console.log(e.key);
+      pressed.push(e.key);
+      pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+      if (pressed.join('').includes(secretCode)) {
+        console.log('Ding Ding!');
+        cornify_add();
+      }
+      console.log(pressed);
+    });
+  </script>
+</body>
+</html>

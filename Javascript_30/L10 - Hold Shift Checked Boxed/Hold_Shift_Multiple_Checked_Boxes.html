@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Checked Boxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="inbox">
+    <div class="item">
+      <input type="checkbox">
+      <p>This is an inbox layout.</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check one Item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Hold down your Shift key</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check a lower item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Everything in between should also be set to checked</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Try do it with out any libraries</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Just regular Javascript</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Good Luck!</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Don't forget to tweet your result!</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    window.onunload=function(){return true;};
+    const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+    let lastChecked;
+    function handleCheck(e){
+      console.log(e);
+      lastChecked = this;
+      //Check if they had the shift key down
+      //And check that they are checking it.
+      let inBetween = false;
+
+      if(e.shiftKey && this.checked){
+        //go ahead and do what we please
+        //loop over every single checkbox
+          checkboxes.forEach(checkbox => {
+            console.log(checkbox);
+            if(checkbox === this || checkbox === lastChecked){
+              inBetween = !inBetween;
+              console.log("Starting to check them inbetween!");
+            }
+            if (inBetween) {
+              checkbox.checked = true;
+            }
+
+          });
+      }
+      lastChecked = this;
+    }
+
+    checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+
+  </script>
+
+</body>
+</html>

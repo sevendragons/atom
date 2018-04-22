@@ -1,0 +1,52 @@
+//	SQLite	and DBBrowser_SQL	//
+sudo apt-get install sqlite3 libsqlite3-dev
+sudo add-apt-repository ppa:linuxgndu/sqlitebrowser-testing
+sudo apt-get update && sudo apt-get install sqlitebrowser
+
+sudo apt-get remove sqlitebrowser	//uninstall
+
+//	Ubuntu server LAMP	//
+192.168.0.24
+APACHE2 in etc/apache2/apache2.conf
+sudo nano apache2.config:
+ServerName localhost
+//
+file apache locate in var/www/html
+//	PHP	//
+ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+add some text in /var/www/html
+sudo nano phpinfo.php
+
+<? php phpinfo() ?>
+
+go to firefox type: localhost/phpinfo.php
+
+other location:cd /etc/php/7.0/apache2
+sudo nano php.ini >> ctr + W (search)>> type:"display_errors">> change from "Off" to "On"
+sudo apachectl restart/start/stop
+
+sudo service apache2 status	
+sudo service apache start
+atom etc/host //file
+loca
+//	MySQL	//
+
+sudo apt-get install mysql-server >>read and follow instruction
+sudo apt-get install mysql-workbench
+systemctl status mysql.service
+
+
+
+
+//test PHP
+sudo gedit /var/www/testphp.php
+<?php phpinfo(); ?>
+http://localhost/testphp.php
+
+
+//where
+whereis sass
+
+
+
+
