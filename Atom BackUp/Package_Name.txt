@@ -13,3 +13,7 @@ minimap
 open-in-browsers name:skandasoft
 pigments
 pretty-json name:federomero
+git-plus
+javascript-snippets
+package-sync
+
