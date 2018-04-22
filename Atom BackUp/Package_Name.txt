@@ -1,0 +1,15 @@
+atom-beautify
+atom-ternjs
+atom wrap-in-tag
+busy-signal
+color picker
+emmet
+file-icons
+highlight-selected
+intentions
+linter
+linter-ui-default
+minimap
+open-in-browsers name:skandasoft
+pigments
+pretty-json name:federomero

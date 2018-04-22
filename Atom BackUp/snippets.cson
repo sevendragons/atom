@@ -1,0 +1,166 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+    # HTML: .text.html.basic
+    # CSS: .source.css
+    # SASS: .source.sass
+    # JavaScript: .source.js
+    # JSON: .source.json
+    # PHP: .text.html.php
+    # Java: .source.java
+    # Ruby: .text.html.erb
+    # Python: .source.python
+    # plain text (including markdown): .text.plain
+
+'.text.html.basic':
+  'fontawesome':
+    'prefix': 'fontawesome'
+    'body': """
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+     """
+   'jquery':
+     'prefix': 'jquerylink'
+     'body': """
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+      """
+
+
+'.source.js':
+  'ready, click function':
+    'prefix': 'clickFunc'
+    'body': """
+      $(document).ready(function(){
+        $($1).click(function(){
+
+        });
+
+      });
+     """
+  'console, table()':
+   'prefix': 'tb'
+   'body': """
+     console.table($1);
+    """
+  'querySelector':
+   'prefix': 'query'
+   'body': """
+     ${1:document}.querySelector('${2:poop}');
+    """
+  'querySelectorAll':
+   'prefix': 'queryall'
+   'body': """
+     ${1:document}.querySelectorAll('${2:poop}');
+    """
+  'get id element':
+    'prefix': 'getId'
+    'body': """
+      document.getElementById("$1");
+
+     """
+  'get class element':
+    'prefix': 'getClass'
+    'body': """
+      document.getElementsByClassName("$1");
+
+     """
+   'get name element':
+     'prefix': 'getName'
+     'body': """
+       document.getElementByName("$1");
+
+      """
+  'poop poop':
+   'prefix': 'poop'
+   'body': """
+      💩
+    """
+  'console, info':
+   'prefix': 'info'
+   'body': """
+     console.info('$1');
+    """
+  'console, assert':
+   'prefix': 'assert'
+   'body': """
+     console.assert($1);
+    """
+  'console, clear':
+   'prefix': 'clear'
+   'body': """
+     console.clear($1);
+    """
+  'console, group':
+   'prefix': 'group'
+   'body': """
+     console.group($1);
+    """
+  'console, groupEnd':
+   'prefix': 'endgroup'
+   'body': """
+     console.groupEnd($1);
+    """
+  'console, count':
+   'prefix': 'count'
+   'body': """
+     console.count($1);
+    """
+  'console, timing':
+   'prefix': 'timing'
+   'body': """
+     console.time($1);
+    """
+  'console, timeEnd':
+   'prefix': 'timeEnd'
+   'body': """
+     console.timeEnd($1);
+    """
+  'addEventListener':
+   'prefix': 'addeventlistener'
+   'body': """
+      addEventListener(${1:type: DOMString}, ${2:callback: EventListener}, ${3: capture?: boolean});
+    """
+  'createElement':
+   'prefix': 'createElement'
+   'body': """
+      ${1:document}.createElement('$2');
+    """
+  'setAttribute':
+   'prefix': 'setAttribute'
+   'body': """
+      setAttribute('${1:name}', '${2:value}')
+    """
+  'setInterval':
+   'prefix': 'setInterval'
+   'body': """
+      setAttribute('${1:function}', '${2:milliseconds}, ${3:param1}, ${4:param1}')
+    """
+  'removeEventListener':
+   'prefix': 'removeeventlistener'
+   'body': """
+      removeEventListener(${1:type: DOMString}, ${2:callback: EventListener}, ${3: capture?: boolean});
+    """
+  'function':
+   'prefix': 'fuc'
+   'body': """
+      function ${1:functionName}(${2}){
+        console.log($2);
+      }
+    """
