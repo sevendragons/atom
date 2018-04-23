@@ -36,8 +36,6 @@ sudo apt-get install mysql-workbench
 systemctl status mysql.service
 
 
-
-
 //test PHP
 sudo gedit /var/www/testphp.php
 <?php phpinfo(); ?>
@@ -60,5 +58,13 @@ sudo apt-get install google-chrome-stable
 ///////Install Firefox developer/////////////
 
 
+
+////PuTTy & FileZila////////
+sudo aptitude install putty
+sudo aptitude install putty-tools
+
+//public key authentication
+puttygen -t rsa -b 2048 -o mykey.ppk
+puttygen -L mykey.ppk
 
 
