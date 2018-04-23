@@ -68,3 +68,10 @@ puttygen -t rsa -b 2048 -o mykey.ppk
 puttygen -L mykey.ppk
 
 
+//Login Ubuntu fail even correct password//
+ctrl + alt + f1
+type username password then 
+mv .Xauthority .Xauthority.bak
+ctrl + alt + f7
+
+
