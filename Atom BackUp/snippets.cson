@@ -87,11 +87,6 @@
        document.getElementByName("$1");
 
       """
-  'poop poop':
-   'prefix': 'poop'
-   'body': """
-      💩
-    """
   'console, info':
    'prefix': 'info'
    'body': """
