@@ -17,3 +17,4 @@ git-plus
 javascript-snippets
 package-sync
 autocomplete-emojis
+Autocomplete Java
