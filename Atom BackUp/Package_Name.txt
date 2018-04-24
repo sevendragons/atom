@@ -16,4 +16,4 @@ pretty-json name:federomero
 git-plus
 javascript-snippets
 package-sync
-
+autocomplete-emojis
