@@ -87,6 +87,11 @@
        document.getElementByName("$1");
 
       """
+  'poop poop':
+   'prefix': 'poop'
+   'body': """
+      💩
+    """
   'console, info':
    'prefix': 'info'
    'body': """
@@ -145,7 +150,7 @@
   'setInterval':
    'prefix': 'setInterval'
    'body': """
-      setAttribute('${1:function}', '${2:milliseconds}, ${3:param1}, ${4:param1}')
+      setInterval(${1:function}, '${2:milliseconds}, ${3:param1}, ${4:param1}')
     """
   'removeEventListener':
    'prefix': 'removeeventlistener'
