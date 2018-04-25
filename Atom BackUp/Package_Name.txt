@@ -18,3 +18,4 @@ javascript-snippets
 package-sync
 autocomplete-emojis
 Autocomplete Java
+atom terminal panel
