@@ -8,7 +8,7 @@ sudo apt-get remove sqlitebrowser	//uninstall
 //	Ubuntu server LAMP	//
 192.168.0.24
 APACHE2 in etc/apache2/apache2.conf
-sudo nano apache2.config:
+sudo nano apache2.conf
 ServerName localhost
 //
 file apache locate in var/www/html
