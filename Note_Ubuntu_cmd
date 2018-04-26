@@ -10,6 +10,12 @@ sudo apt-get remove sqlitebrowser	//uninstall
 APACHE2 in etc/apache2/apache2.conf
 sudo nano apache2.conf
 ServerName localhost
+
+sudo apache2ctl configtest
+//check syntax Ok
+sudo ufw app list
+sudo ufw app info "Apache Full"
+
 //
 file apache locate in var/www/html
 //	PHP	//
@@ -57,7 +63,9 @@ sudo apt-get install google-chrome-stable
 
 ///////Install Firefox developer/////////////
 
+//Sensors: sudo apt-get install lm-sensors
 
+//Atom repository: sudo add-apt-repository ppa:webupd8team/atom
 
 ////PuTTy & FileZila////////
 sudo aptitude install putty
@@ -74,4 +82,18 @@ type username password then
 mv .Xauthority .Xauthority.bak
 ctrl + alt + f7
 
+//Remove Folder: rm -r mydir
+// Deleted Folder with no prompt or message: 
 
+//Copy Folder: 
+cp -avr /home/vivek/letters /usb/backup
+//You use -r (copy recursively) and specify the new name
+cp -r /path/to/directory /path/to/location/new-name
+
+cp -avr
+// where:
+// -a : Preserve the specified attributes such as directory an file mode, ownership, timestamps, if possible additional attributes: context, links, xattr, all.
+// -v : Explain what is being done.
+// -r : Copy directories recursively. Example
+
+/////////////--------Cut Folder-------------////////////////////////////
