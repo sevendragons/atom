@@ -1,0 +1,79 @@
+source /etc/environment
+source ~/.bashrc
+sudo nano ~/.bashrc
+source ~/.bashrc  ///remember
+source ~/etc/environment
+
+update-alternatives --config java	
+
+//jdk8
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt install oracle-java8-installer
+sudo apt install oracle-java8-set-default
+
+//	edit sudo nano etc/environment	//
+JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+JRE_HOME="/usr/lib/jvm/java-8-oracle/jre"
+
+// edit sudo nano ~/.bashrc	//
+
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+export ANDROID_HOME=/home/n2k2/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+#export GRADLE_HOME=/opt/android-studio/gradle/gradle-4.1
+#export PATH=${PATH};$GRADLE_HOME/bin
+
+
+
+//	nodejs 		//
+sudo apt install linuxbrew-wrapper
+brew update
+brew install yarn
+git clone --depth=1 https://github.com/mxstbr/react-boilerplate.git
+cd react-boilerplate
+npm run setup
+npm run clean
+npm run generate
+
+
+//	meteor add accounts-ui accounts-password	//
+
+meteor run android-device --port 3001 //port 3000
+
+
+//	Package manager error etc/apt/sources.list	//
+sudo rm -vf /var/lib/apt/lists/*  
+sudo add-apt-repository --remove ppa:pinta-maintainers/pinta-stable
+sudo apt update
+sudo apt install -f 
+atom --safe
+
+//	LAMP OR MAMP in UBUNTU	//
+in Mobile Linux -- Cordova/PhoneGap -- Firebase, MongoDb, MySQL -- Javascript
+
+
+
+
+//	Netbean		//
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
+
+// Using NetBeans & SASS With WordPress //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
