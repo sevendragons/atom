@@ -84,6 +84,11 @@ sudo rm /var/cache/apt/archives/lock
 sudo rm /var/lib/dpkg/lock
 /////////////////////////////////////
 
+/////////////problem with mergelist var/lib/opt/list//////////////
+sudo rm -vf /var/lib/apt/lists/*//
+
+
+
 //Login Ubuntu fail even correct password//
 ctrl + alt + f1
 type username password then 
