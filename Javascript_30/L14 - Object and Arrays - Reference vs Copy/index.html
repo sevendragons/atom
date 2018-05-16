@@ -8,17 +8,26 @@
 </head>
 <body>
 
+<!-- Definition of Reference that when you add something to the array Object.sth, it adds directly to the original array -->
+<!-- While Copy like in the Definition that it will make a new copy base on we create. Base on the method on javascript ES6. For example: assign({}, object , {add new properties or update the property}),  -->
     <script>
       // start with strings, numbers and booleans
       let age = 100;
       let age2 = age;
       console.log(age, age2);
       age = 200;
-      console.log(age, age2);
+      console.log(age, age2); //Show 200 100
 
       // let name = 'Wes';
       // let name2 = name;
       // String number and value are the same;
+      let name = "Nicky";
+      let name2 = name;
+      console.log(name, name2);
+      name2="minaj";
+      console.log(name, name2); //simillar to above
+
+
       //But not THE SAME to ARRAY
 
 
@@ -41,7 +50,7 @@
       // Why? It's because that is an array reference, not an array copy. They both point to the same array!
 
       // So, how do we fix this? We take a copy instead!
-      const team2 = player.slice();
+      const team2 = players.slice();
 
       // one way
 
@@ -49,7 +58,7 @@
       const team3 = [].concat(players);
 
       // or use the new ES6 Spread
-      const team4 = [...players];
+      const team4 = [...players];     //Spread in Array
       team4[3] = 'heee haw hoo'
       console.log(team4);
 
@@ -66,14 +75,14 @@
 
       // and think we make a copy:
       const captain = person;
-      contain.number = 99;
+      captain.number = 99;
 
-      // how do we take a copy instead?
-      object.assign({}, person, {number: 99, age:12});
+      // how do we take a copy instead?      ASSIGN not the best way to make a copy; ask youself should we do this. Object inside Object cannot make a copy in assign() method.
+      const cap2 = Object.assign({}, person, {number: 99, age:12});
       console.log(cap2);
 
       // We will hopefully soon see the object ...spread
-      const cap3 = {...persin};
+      const cap3 = {...person};      //Spread in Object
 
 
       // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
@@ -89,6 +98,9 @@
       console.log(wes);
 
       const dev =Object.assign({}, wes);
+      const dev2 = JSON.parse(JSON.stringify(wes));
+      console.log(dev);
+      console.log(dev2);
 
 
     </script>
