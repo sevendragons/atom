@@ -110,3 +110,14 @@ cp -avr
 // -r : Copy directories recursively. Example
 
 /////////////--------Cut Folder-------------////////////////////////////
+//It is mv
+
+
+
+//////------------ ls port all process -------------///////////////////
+ps aux | grep 5001
+ps aux 
+
+
+
+
