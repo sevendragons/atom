@@ -19,3 +19,4 @@ package-sync
 autocomplete-emojis
 Autocomplete Java
 atom terminal panel
+vuejs language 'thay cao down thoi'
