@@ -1,0 +1,6 @@
+# This for vue
+'atom-text-editor[data-grammar~="vue"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
+#This is for jsx
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
