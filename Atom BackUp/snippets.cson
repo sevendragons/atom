@@ -67,11 +67,6 @@
    'body': """
      ${1:document}.getElementByName('$2');
     """
-  'poop poop':
-   'prefix': 'poop'
-   'body': """
-      💩
-    """
   'console, info':
    'prefix': 'info'
    'body': """
