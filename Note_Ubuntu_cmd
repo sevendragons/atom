@@ -123,4 +123,4 @@ ps aux
 ///////-----------------Listen all port -------------------//////////
 sudo netstat -lpn
 sudo kill PID
-
+sudo apt-get autoremove/autoclean
