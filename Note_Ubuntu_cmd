@@ -113,14 +113,20 @@ cp -avr
 //It is mv
 
 
-
 //////------------ ls port all process -------------///////////////////
 ps aux | grep 5001
 ps aux 
 
+///////// -------- htop -------- //////////////
+htop
+sudo apt-get install lm-sensors ///// sudo sensors-detect
+sudo service kmod start
+sensors
 
 
 ///////-----------------Listen all port -------------------//////////
 sudo netstat -lpn
 sudo kill PID
 sudo apt-get autoremove/autoclean
+//if we can hot reload in vue-loader or webpack in vue cli -- clean cache(google) kill the port like above
+
