@@ -129,4 +129,6 @@ sudo netstat -lpn
 sudo kill PID
 sudo apt-get autoremove/autoclean
 //if we can hot reload in vue-loader or webpack in vue cli -- clean cache(google) kill the port like above
+//run npm dev      in root account
+
 
