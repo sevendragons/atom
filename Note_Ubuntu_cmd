@@ -133,6 +133,9 @@ sudo apt-get autoremove/autoclean
 
 ///////////////-------- broadcast, devploy from my computer---------------////
 sudo apt-get install ngnix
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
 sudo apt-get install pm2
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-centos-7
 
