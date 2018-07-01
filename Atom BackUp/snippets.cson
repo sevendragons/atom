@@ -58,8 +58,107 @@
      'body': """
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       """
+#Table
+  'Table_format':
+    'prefix': 'table1'
+    'body': """
+        <table summary="$1">
+              <thead>
+                <tr>
+                  <th>$2</th>
+                  <th>$3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$4</td>
+                  <td>$5</td>
+                </tr>
+                <tr>
+                  <td>$6</td>
+                  <td>$7</td>
+                </tr>
+              </tbody>
+            </table>
+    """
+#Comment
+  'Comment_html':
+    'prefix': 'cmmhtml'
+    'body': """
+    <!-- ************************************************************* -->
+    <!-- ${1:Partial Description} -->
+    <!-- *************************************************************  -->
 
+    """
+#Form google map
+  'Google_map':
+    'prefix': 'map'
+    'body': """
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
+         <label for="saddr">Enter your location</label>
+         <input type="text" name="saddr" />
+         <input type="hidden" name="daddr" value="350 5th Ave New York, NY 10018 (Empire State Building)" />
+         <input type="submit" value="Get directions" />
+      </form>
+      <!--saddr = blank input field for entering START address-->
+      <!--daddr = hard-coded END address-->
 
+    """
+        
+        
+#####################---snippet_CSS---########################
+#Comment
+'.source.css':
+  'Comment_css':
+      'prefix': 'cmmcss'
+      'body': """
+        /*--------------------------------------------------------------*/
+        /* ${1:Partial Description}
+        /*--------------------------------------------------------------*/
+      """
+ #Format Comment
+'.source.css':
+  'Comment_css':
+      'prefix': 'format-css'
+      'body': """
+        /*---------- Header ----------*/
+        ${1:$}
+        /*---------- End Header ----------*/
+
+        /*---------- Main ----------*/
+
+        /*---------- End Main ----------*/
+
+        /*---------- Footer ----------*/
+
+        /*---------- End-Footer ----------*/
+      """
+#Clearfix
+  'Clearfix':
+      'prefix': 'clearfix'
+      'body': """
+          .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      """
+#visualhidden
+  'visualhidden':
+      'prefix': 'visual-hidden'
+      'body': """
+          .visuallyhidden {
+          position: absolute;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          height: 1px; width: 1px;
+          margin: -1px; padding: 0; border: 0;
+        }
+      """
+      
+    
+        
+ #####################---snippet_Javascript---########################
 '.source.js':
   'ready, click function':
     'prefix': 'clickFunc'
@@ -161,3 +260,14 @@
 
       }
     """
+    # Comment
+  'Comment_javascript':
+    'prefix': 'cmmjavascript'
+    'body': """
+      /*--------------------------------------------------------------*/
+      /* ${1:Partial Description}
+      /*--------------------------------------------------------------*/
+    """
+
+
+
