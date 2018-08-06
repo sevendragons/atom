@@ -58,7 +58,7 @@
      'body': """
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       """
-#Table
+  #Table
   'Table_format':
     'prefix': 'table1'
     'body': """
@@ -88,7 +88,6 @@
     <!-- ************************************************************* -->
     <!-- ${1:Partial Description} -->
     <!-- *************************************************************  -->
-
     """
 #Form google map
   'Google_map':
@@ -102,10 +101,15 @@
       </form>
       <!--saddr = blank input field for entering START address-->
       <!--daddr = hard-coded END address-->
-
     """
-        
-        
+  #VueJS CDN
+  'VueJS':
+    'prefix': 'vuejs'
+    'body': """
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    """
+
+
 #####################---snippet_CSS---########################
 #Comment
 '.source.css':
@@ -117,18 +121,15 @@
         /*--------------------------------------------------------------*/
       """
  #Format Comment
-'.source.css':
-  'Comment_css':
+  'Format_css':
       'prefix': 'format-css'
       'body': """
         /*---------- Header ----------*/
         ${1:$}
         /*---------- End Header ----------*/
-
         /*---------- Main ----------*/
 
         /*---------- End Main ----------*/
-
         /*---------- Footer ----------*/
 
         /*---------- End-Footer ----------*/
@@ -143,6 +144,14 @@
           clear: both;
         }
       """
+#mediaScreen
+  'mediaScreen':
+      'prefix': 'mediaScreen'
+      'body': """
+          @media screen and (min-width: $1){
+        
+          }
+      """
 #visualhidden
   'visualhidden':
       'prefix': 'visual-hidden'
@@ -155,10 +164,6 @@
           margin: -1px; padding: 0; border: 0;
         }
       """
-      
-    
-        
- #####################---snippet_Javascript---########################
 '.source.js':
   'ready, click function':
     'prefix': 'clickFunc'
@@ -251,7 +256,7 @@
   'import':
    'prefix': 'importv'
    'body': """
-   import ${1} from './${1}';
+   import ${1} from './${1}'
     """
   'function':
    'prefix': 'fuc'
@@ -260,7 +265,7 @@
 
       }
     """
-    # Comment
+  # Comment
   'Comment_javascript':
     'prefix': 'cmmjavascript'
     'body': """
@@ -268,6 +273,4 @@
       /* ${1:Partial Description}
       /*--------------------------------------------------------------*/
     """
-
-
-
+   
