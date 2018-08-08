@@ -149,7 +149,7 @@
       'prefix': 'mediaScreen'
       'body': """
           @media screen and (min-width: $1){
-        
+
           }
       """
 #visualhidden
@@ -258,6 +258,11 @@
    'body': """
    import ${1} from './${1}'
     """
+  'import{}':
+   'prefix': 'import{}'
+   'body': """
+   import {${1}} from '${1}'
+    """
   'function':
    'prefix': 'fuc'
    'body': """
@@ -273,4 +278,15 @@
       /* ${1:Partial Description}
       /*--------------------------------------------------------------*/
     """
-   
+  # React
+  'React_Import':
+    'prefix': 'react'
+    'body': """
+      import ${1:React} from 'react'
+    """
+  # Redux
+  'Redux_Import':
+    'prefix': 'redux'
+    'body': """
+      import {${1:connect}} from '${1:react-}redux'
+    """
