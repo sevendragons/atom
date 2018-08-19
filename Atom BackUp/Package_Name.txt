@@ -21,3 +21,13 @@ Autocomplete Java
 atom terminal panel
 vuejs language 'thay cao down thoi'
 react and snippet react
+
+Autocomplete module
+language-javascript-jsx
+language vue
+teletype
+
+
+
+
+                                                                    
