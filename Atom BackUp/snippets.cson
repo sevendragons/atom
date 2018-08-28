@@ -112,10 +112,10 @@
   'API Google Map':
     'prefix': 'apiGoogleMap'
     'body': """
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq06l5RUVfib62IYRQacLc-KAy0XIWAVs"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgVW4Oe8TxEgzK8ingfUb6Kh85Rr8twqQ&callback=initMap"
+      async defer></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgVW4Oe8TxEgzK8ingfUb6Kh85Rr8twqQ"></script>
     """
-
-
 #####################---snippet_CSS---########################
 #Comment
 '.source.css':
@@ -315,6 +315,12 @@
     'prefix': 'router-react'
     'body': """
       import {BrowserRouter, Switch, Link, Route, ${1:Other}} from 'react-router-dom';
+    """
+  # Style - Components
+  'Style Components':
+    'prefix': 'StyleComponents'
+    'body': """
+      import Styled, ${1:{ ThemeProvider, keyframes}} from 'styled-components';
     """
   # Redux
   'Redux_Import':
