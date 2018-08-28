@@ -20,12 +20,13 @@ autocomplete-emojis
 Autocomplete Java
 atom terminal panel
 vuejs language 'thay cao down thoi'
-react and snippet react
+react and react snippet
 
 Autocomplete module
 language-javascript-jsx
 language vue
 teletype
+node-debugger
 
 
 
