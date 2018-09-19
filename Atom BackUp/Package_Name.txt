@@ -27,8 +27,7 @@ language-javascript-jsx
 language vue
 teletype
 node-debugger
-
-
+language-babel https://github.com/gandm/language-babel/issues/380
 
 
                                                                     
