@@ -1,0 +1,26 @@
+Git - Version Control
+Github - Website for developer base on git 
+	Inside they have repository call "repo" - create that at beginning pls
+	"Commit" allow you to change code directly in code repository, this is the key because:
+		Each "Commit" after you hit the button has a unique key(identify) share it
+		Inside "Commit" has an idea call "Hash" - Key concept; History show everything 			that what contributor commit, so careful when you write something.
+	
+	"Branch": Think a commit like a linear diagram, chart from start to the end, we will have 		some situations that we not sure about this code, so we seperate the code in each side 		which call is "Branch".  (See the picture to understand more)
+	 "Graphs" visualize what you commit and branch
+
+
+	What if after we create a new "New Branch", we want to push or making a new branch content 		go back to the main or the "master", the "main code". Solutions call:
+		"Pull Request and Merge": Merge that help us to combie the code in branch code to 			the master code.
+		
+		Fork: A fork is a copy of a repository. Forking a repository allows you to freely 			experiment with changes "without affecting the original project". When you fork it 			creates a duplicator for people you want to share.THE CODE JUST CHAGE IN YOUR 			DUPLICATOR NOT IN THE MAIN CODE. You need to make a pull request to contribute 			back to a Main code. 
+		 
+		Pull Request:
+		Clone: the act of taking a respository that's on the 			server then transfer to local machine or cloning. You 			can push or it back.
+		
+
+		Status:
+git init
+git status
+git clone https:/github.com/somepoops
+git commit
+git commit -a -m "Adding the key of C"
