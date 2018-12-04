@@ -24,3 +24,31 @@ git status
 git clone https:/github.com/somepoops
 git commit
 git commit -a -m "Adding the key of C"
+
+git add .
+git checkout -b somthingHere(title)
+git commit -m 'someMessage'
+git push -u origin somthingHere
+
+git clone <url of repo> -b <branch name to be cloned>
+clone and pull specific branch:
+git clone -b branchName git@github_ssh_link
+git pull remoteName branchName
+git remote add origin https://github.com/user/repo.git
+
+
+git checkout branchName        //switch to another branchd
+
+git merge --abort 
+
+git merge remotename/branchname
+# Merges updates made online with your local work
+
+git stash
+git pull
+git stash pop 		// merge the stash and the branch that you've just pull
+
+git fetch
+git checkout localBranch
+git merge remoteBranch
+
