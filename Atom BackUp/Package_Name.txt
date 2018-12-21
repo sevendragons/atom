@@ -2,6 +2,7 @@ atom-beautify
 atom-ternjs
 atom wrap-in-tag
 busy-signal
+git-time-machine
 color picker
 emmet
 file-icons
@@ -19,12 +20,11 @@ package-sync
 autocomplete-emojis
 Autocomplete Java
 atom terminal panel
-vuejs language 'thay cao down thoi'
+language-vuejs 'thay cao down thoi'
 react and react snippet
 
 Autocomplete module
 language-javascript-jsx
-language vue
 teletype
 node-debugger
 language-babel https://github.com/gandm/language-babel/issues/380
