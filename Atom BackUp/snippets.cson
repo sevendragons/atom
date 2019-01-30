@@ -34,12 +34,19 @@
   'fontawesome':
     'prefix': 'fontawesome'
     'body': """
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
      """
    'jquery':
      'prefix': 'jquerylink'
      'body': """
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" charset="utf-8"></script>
+      """
+   'jqueryUI':
+     'prefix': 'jqueryUI'
+     'body': """
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       """
    'bootstrap':
      'prefix': 'bootstrap'
@@ -89,6 +96,11 @@
     <!-- ${1:Partial Description} -->
     <!-- *************************************************************  -->
     """
+  'Comment_html_2':
+    'prefix': 'cmmhtml2'
+    'body': """
+    <!-- ************* --- ${1:Partial Description} --- *************** -->
+    """
 #Form google map
   'Google_map':
     'prefix': 'map'
@@ -116,6 +128,24 @@
       async defer></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgVW4Oe8TxEgzK8ingfUb6Kh85Rr8twqQ"></script>
     """
+  # P5.js framework
+  'P5 js framework':
+    'prefix': 'p5js'
+    'body': """
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    """
+  # P5 Dom JS framework
+  'P5 Dom js framework':
+    'prefix': 'p5Domjs'
+    'body': """
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    """
+  # P5 Sound JS framework
+  'P5 Sound js framework':
+    'prefix': 'p5Soundjs'
+    'body': """
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.js"></script>
+    """
 #####################---snippet_CSS---########################
 #Comment
 '.source.css':
@@ -126,6 +156,12 @@
         /* ${1:Partial Description}
         /*--------------------------------------------------------------*/
       """
+#Comment2
+  'Comment_css_2':
+      'prefix': 'cmmcss2'
+      'body': """
+        /*----------------- ${1:Partial Description} -------------------*/
+      """
  #Format Comment
   'Format_css':
       'prefix': 'format-css'
@@ -133,9 +169,11 @@
         /*---------- Header ----------*/
         ${1:$}
         /*---------- End Header ----------*/
+
         /*---------- Main ----------*/
 
         /*---------- End Main ----------*/
+
         /*---------- Footer ----------*/
 
         /*---------- End-Footer ----------*/
@@ -170,6 +208,15 @@
           margin: -1px; padding: 0; border: 0;
         }
       """
+#Flex Center
+  'flexCenter':
+      'prefix': 'flexCenter'
+      'body': """
+          display:flex;
+          justify-content: center;
+          align-items: center;
+
+      """
 '.source.js':
   'ready, click function':
     'prefix': 'clickFunc'
@@ -189,52 +236,55 @@
       'body': """
       💩
       """
+
 # ###--- All about Console -- ####
   'console, table()':
-   'prefix': 'tb'
+   'prefix': 'consoletb'
    'body': """
      console.table($1);
     """
   'console, info':
-   'prefix': 'info'
+   'prefix': 'consoleInfo'
    'body': """
      console.info('$1');
     """
   'console, assert':
-   'prefix': 'assert'
+   'prefix': 'consoleAssert'
    'body': """
      console.assert($1);
     """
   'console, clear':
-   'prefix': 'clear'
+   'prefix': 'consoleClear'
    'body': """
      console.clear($1);
     """
   'console, group':
-   'prefix': 'group'
+   'prefix': 'consoleGroup'
    'body': """
      console.group($1);
     """
   'console, groupEnd':
-   'prefix': 'endgroup'
+   'prefix': 'consoleGroupEnd'
    'body': """
      console.groupEnd($1);
     """
   'console, count':
-   'prefix': 'count'
+   'prefix': 'consoleCount'
    'body': """
      console.count($1);
     """
   'console, timing':
-   'prefix': 'timing'
+   'prefix': 'consoleTiming'
    'body': """
      console.time($1);
     """
   'console, timeEnd':
-   'prefix': 'timeEnd'
+   'prefix': 'consoleTimeEnd'
    'body': """
      console.timeEnd($1);
     """
+# --- end --- #
+
 # ###--- addEventListener -- ####
   'addEventListener':
    'prefix': 'addeventlistener'
@@ -268,15 +318,22 @@
 
     }
     """
-  'import':
-   'prefix': 'importv'
+
+  # import snippet
+  'import file':
+   'prefix': 'importfile'
    'body': """
    import ${1} from './${1}'
     """
   'import{}':
-   'prefix': 'importb'
+   'prefix': 'importbracket'
    'body': """
    import {${1}} from '${1}'
+    """
+  'import library':
+   'prefix': 'importlibrary'
+   'body': """
+   import ${1} from '${1}'
     """
   # Comment
   'Comment_javascript':
@@ -320,7 +377,7 @@
   'Style Components':
     'prefix': 'StyleComponents'
     'body': """
-      import Styled, ${1:{ ThemeProvider, keyframes}} from 'styled-components';
+      import Styled, ${1:{ ThemeProvider, keyframes } } from 'styled-components';
     """
   # Redux
   'Redux_Import':
@@ -334,3 +391,39 @@
     'body': """
       export ${1:default} ${2:class}
     """
+  #Flex Center
+  'Flex React':
+      'prefix': 'flexReact'
+      'body': """
+          display:flex;
+          justify-content: center;
+          align-items: center;
+
+      """
+  #mediaScreen
+  'Media Screen':
+      'prefix': 'mediaScreen'
+      'body': """
+          @media screen and ( min-width: ${1:width} ){
+
+          }
+
+      """
+
+  #Technique: combine styled components and reactstrap (boostrap)
+  'styled components and reactstrap':
+    'prefix': 'styledAndReactstrap'
+    'body': """
+      let ${1:reactstrap} = Styled(${1:reactstrap})`
+      
+      `
+    """
+
+
+
+  # ----- redux ------ #
+  'redux-dev-tools':
+      'prefix': 'reduxDevTools'
+      'body': """
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+      """
