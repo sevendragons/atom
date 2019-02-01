@@ -1,0 +1,97 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Bootstrap Link": {
+		"prefix": "bootstrap",
+		"body": [
+			"<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' crossorigin='anonymous'>"
+		],
+		"description": "Bootstrap Link"
+	},
+	"Bootstrap Script1": {
+		"prefix": "bootstrapJS",
+		"body": [
+			"<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js' integrity='sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T' crossorigin='anonymous'></script>",
+			"<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js' integrity='sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut' crossorigin='anonymous'></script>",
+			"<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>"
+		],
+		"description": "Bootstrap Script1"
+	},
+	"Font Awesome": {
+		"prefix": "Font Awesome",
+		"body": [
+			"<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg' crossorigin='anonymous'>"
+		],
+		"description": "Font Awesome"
+	},
+	"Jquery": {
+		"prefix": "jquery",
+		"body": [
+			"<script src='https://code.jquery.com/jquery-3.3.1.min.js' charset='utf-8'></script>"
+		],
+		"description": "Jquery usually come to Boostrap"
+	},
+	"Animate.css": {
+		"prefix": "Animate.css",
+		"body": [
+			"<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>"
+		],
+		"description": "Animate.css usually come to Boostrap"
+	},
+	"Table Format": {
+		"prefix": "tableHTML",
+		"body": [
+			"<table summary=${1}>",
+			"<thead>",
+			"<tr>",
+			"<th>${2}</th>",
+			"<th>${3}</th>",
+			"</tr>",
+			"</thead>",
+			"<tbody>",
+			"<tr>",
+			"<td>${4}</td>",
+			"<td>${5}</td>",
+			"</tr>",
+			"<tr>",
+			"<td>${6}</td>",
+			"<td>${7}</td>",
+			"</tr>",
+			"</tbody>",
+            "</table>"
+		],
+		"description": "Table format"
+	},
+	"Comment HTML": {
+		"prefix": "cmmhtml",
+		"body": [
+			"<!-- ************************************************************* -->",
+			"<!-- ${1:Partial Description} -->",
+			"<!-- *************************************************************  -->"
+		],
+		"description": "Comment HTML"
+	},
+	"Comment HTML2": {
+		"prefix": "cmmhtml2",
+		"body": [
+			"<!**********-- ${1:Partial Description} --**********->"
+		],	
+		"description": "Comment HTML2"
+	},
+	"Vue CDN": {
+		"prefix": "VueCDN",
+		"body": [
+			"<script src='https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js'></script>"
+		],	
+		"description": "Vue CDN"
+	},
+	
+
+
+
+
+
+}
