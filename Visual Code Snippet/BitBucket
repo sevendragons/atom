@@ -1,0 +1,52 @@
+git add.
+git checkout -b somthingHere(title)
+git commit -m 'someMessage'
+git push -u origin somthingHere
+
+git clone <url of repo> -b <branch name to be cloned>
+
+app password bitbucket
+ QMRPRzPBsBPSvnCqCbfe 
+ 
+
+clone and pull specific branch:
+git clone -b branchName git@github_ssh_link
+git pull remoteName branchName
+git remote add origin https://github.com/user/repo.git
+
+
+
+git checkout branchName        //switch to another branchd
+
+git merge --abort 
+
+
+git merge remotename/branchname
+# Merges updates made online with your local work
+
+
+git stash
+git pull
+git stash pop 		// merge the stash and the branch that you've just pull
+
+git fetch
+git checkout localBranch
+git merge remoteBranch
+
+
+
+'mongodb://nicky:nicky123@ds225902.mlab.com:25902/mern',
+
+
+git@github.com:ipongrani/care-facility-frontend.git
+https://of9bca1n83.execute-api.us-east-1.amazonaws.com/dev/BlueCareMember
+
+token:
+jp374j4pjp374j4q
+
+ios
+jp21xqusjp21xqut
+
+JeanAuthentication project:
+nickyle
+0123456789
