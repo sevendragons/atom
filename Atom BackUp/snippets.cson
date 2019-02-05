@@ -419,11 +419,42 @@
       `
     """
 
-
-
   # ----- redux ------ #
   'redux-dev-tools':
       'prefix': 'reduxDevTools'
       'body': """
         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+      """
+
+ # ----- Snippet Promise ------ #
+  'Promise Syntax':
+      'prefix': 'promjs'
+      'body': """
+        fetchItems = (endPoint) => {
+          const {${1:something}} = this.state;
+          fetch(endPoint)
+          .then(result => result.json())
+          .then(result => {
+            this.setState({
+              ${2: something2}
+            })
+          })
+        }
+          .catch(error => console.error('Error:', error))
+
+      """
+  # ----- Snippet Async Await ------ #
+  'Await Syntax':
+      'prefix': 'awaitjs'
+      'body': """
+        ${1:fetchItems} = async ${2: endPoint} => {
+          const {} = this.state;
+          const result = await (await fetch(endPoint)).json();
+
+          try{
+            ${3:something}
+          } catch (e){
+            console.log("😥 Ehh something wrong", e);
+          }
+        }
       """
